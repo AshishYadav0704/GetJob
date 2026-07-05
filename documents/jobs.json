@@ -1,0 +1,20 @@
+[
+  {
+    "id": "JOB-001",
+    "title": "Frontend Developer",
+    "description": "We are seeking a developer to build dynamic, responsive web interfaces and component-based layouts.",
+    "requirements": ["React", "Tailwind CSS", "TypeScript", "Git", "GitHub"]
+  },
+  {
+    "id": "JOB-002",
+    "title": "Backend Python Engineer",
+    "description": "Looking for an engineer to build robust APIs and manage server-side logic.",
+    "requirements": ["Python", "FastAPI", "SQL", "Docker", "AWS"]
+  },
+  {
+    "id": "JOB-003",
+    "title": "Full Stack Engineer",
+    "description": "Join our startup to work across the entire stack, from database optimization to UI implementation.",
+    "requirements": ["React", "Node.js", "PostgreSQL", "TypeScript", "System Design"]
+  }
+]
