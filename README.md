@@ -24,3 +24,8 @@ GetJob AI is an intelligent career companion that bridges the gap between your r
    source venv/bin/activate
    pip install -r requirements.txt
    uvicorn api.main:app --reload
+3.**Setup Frontend**:
+```bash
+cd frontend
+npm install
+npm run dev
