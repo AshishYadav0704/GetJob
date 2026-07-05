@@ -31,4 +31,4 @@ npm install
 npm run dev
 
 
-**Built with passion by Ashish Kumar Yadav**
+@ Built with passion by Ashish Kumar Yadav
