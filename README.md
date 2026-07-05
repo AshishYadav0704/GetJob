@@ -29,3 +29,6 @@ GetJob AI is an intelligent career companion that bridges the gap between your r
 cd frontend
 npm install
 npm run dev
+
+
+**Built with passion by Ashish Kumar Yadav**
