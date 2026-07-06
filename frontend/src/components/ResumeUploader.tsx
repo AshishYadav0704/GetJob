@@ -58,7 +58,7 @@ export default function ResumeUploader() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('https://getjob-q483.onrender.com/', {
+      const response = await fetch('https://getjob-q483.onrender.com/api/upload-resume', {
         method: 'POST',
         body: formData,
       });
@@ -77,7 +77,7 @@ export default function ResumeUploader() {
   const generateCoverLetter = async (job: any) => {
     setGeneratingLetterFor(job.job_id);
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/generate-cover-letter', {
+      const response = await fetch('https://getjob-q483.onrender.com/api/generate-cover-letter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -110,7 +110,7 @@ export default function ResumeUploader() {
     }));
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/interview-chat', {
+      const response = await fetch('https://getjob-q483.onrender.com/api/interview-chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
