@@ -6,3 +6,5 @@ langchain
 langchain-google-genai
 requests
 python-dotenv
+pdfplumber
+python-multipart
