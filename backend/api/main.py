@@ -7,16 +7,18 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from fastapi import Depends
-from database import engine, Base, get_db
-from db_models import Candidate
+
+# Corrected Imports (Added 'backend.')
+from backend.database import engine, Base, get_db
+from backend.db_models import Candidate
 
 # Import our four powerhouse agents
-from agents.resume_agent import parse_resume
-#from rag.retriever import get_matching_jobs
-from rag.live_jobs import fetch_live_jobs
-from agents.matcher_agent import match_resume_to_job
-from agents.cover_letter_agent import generate_cover_letter
-from agents.interview_agent import generate_interview_response
+from backend.agents.resume_agent import parse_resume
+# from backend.rag.retriever import get_matching_jobs
+from backend.rag.live_jobs import fetch_live_jobs
+from backend.agents.matcher_agent import match_resume_to_job
+from backend.agents.cover_letter_agent import generate_cover_letter
+from backend.agents.interview_agent import generate_interview_response
 
 app = FastAPI(title="GetJob API")
 # Create the database tables automatically
@@ -31,7 +33,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-UPLOAD_DIR = "../documents"
+UPLOAD_DIR = "temp_documents"
 
 # --- Data Models ---
 class InterviewChatRequest(BaseModel):
