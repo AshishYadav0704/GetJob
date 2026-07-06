@@ -3,7 +3,7 @@ import pdfplumber
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
-from models.schemas import ResumeProfile
+from backend.models.schemas import ResumeProfile
 
 # Load environment variables (your Google API Key)
 load_dotenv()

@@ -3,7 +3,7 @@ import json
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
-from models.schemas import JobMatchResult
+from backend.models.schemas import JobMatchResult
 
 # Load environment variables
 load_dotenv()
