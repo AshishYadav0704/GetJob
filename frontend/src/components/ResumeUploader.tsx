@@ -58,7 +58,7 @@ export default function ResumeUploader() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/upload-resume', {
+      const response = await fetch('https://getjob-q483.onrender.com/', {
         method: 'POST',
         body: formData,
       });
